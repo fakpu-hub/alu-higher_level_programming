@@ -1,10 +1,18 @@
-#!/usr/bin/python3
+#!/usr/bin/python3                                                                                                                                  
 import sys
-from calculator_1 import add
-from calculator_1 import sub
-from calculator_1 import mul
-from calculator_1 import div
+def add(a, b):
+    return a + b
 
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    if b == 0:
+        return None
+    return a / b
 if __name__ == "__main__":
     if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
@@ -27,4 +35,3 @@ if __name__ == "__main__":
         sys.exit(1)
 
     print("{} {} {} = {}".format(a, op, b, result))
-    
