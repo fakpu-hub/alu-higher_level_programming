@@ -33,9 +33,9 @@ class Square:
     def position(self, value):
         """Set the square's position after validation."""
         if (
-            not isinstance(value, tuple)
-            or len(value) != 2
-            or not all(
+            not isinstance(value, tuple) or
+            len(value) != 2 or
+            not all(
                 isinstance(n, int) and n >= 0 for n in value
             )
         ):
