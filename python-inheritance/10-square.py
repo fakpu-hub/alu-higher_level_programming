@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+"""Defines a Square class."""
+class Square(Rectangle):
+    """Representation of a square."""
+
+    def __init__(self, size):
+        """Initialize a square with a validated size."""
+        self.integer_validator("size", size)
+        self.__size = size
+
+    def area(self):
+        """Return the square's area."""
+        return self.__size * self.__size
