@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Validate"""
+
 class BaseGeometry:
     """Base geometry class."""
 

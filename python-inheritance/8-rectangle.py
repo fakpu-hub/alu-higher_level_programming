@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Rectangle"""
+
 class Rectangle(BaseGeometry):
     """Representation of a rectangle."""
 
