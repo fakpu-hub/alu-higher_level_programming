@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This class defibnes Rectangle"""
+"""This module defines Rectangle"""
+
 
 class Rectangle(BaseGeometry):
     """Representation of a rectangle."""

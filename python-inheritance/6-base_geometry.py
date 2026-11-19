@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """doc"""
 
+
 class BaseGeometry:
     """Base geometry class."""
 
