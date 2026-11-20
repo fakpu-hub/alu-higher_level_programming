@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""Square class."""
+"""This module defines a Square class based on Rectangle."""
+
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """Representation of a square."""
+    """Represent a square with a validated private size."""
 
     def __init__(self, size):
         """Initialize a square with a validated size."""
@@ -12,5 +14,5 @@ class Square(Rectangle):
         super().__init__(size, size)
 
     def area(self):
-        """Return the square's area."""
-        return self.__size * self.__size
+        """Return the area of the square."""
+        return self.__size ** 2
