@@ -7,7 +7,7 @@ import sys
 
 
 def main():
-    """Send an email using POST and display the decoded response body."""
+    """Sends an email using POST and displays the response."""
     url = sys.argv[1]
     email = sys.argv[2]
 
