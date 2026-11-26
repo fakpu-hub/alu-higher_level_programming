@@ -6,7 +6,7 @@ import requests
 
 def main():
     """Send a GET request and display the response body."""
-    response = requests.get("http://0.0.0.0:5050/status")
+    response = requests.get("http://intranet.hbtn.io/status")
     body = response.text
 
     print("Body response:")
