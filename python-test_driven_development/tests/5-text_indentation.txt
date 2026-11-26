@@ -1,0 +1,25 @@
+Test the text_indentation function.
+
+>>> text_indentation("Hello. World")
+Hello.
+
+World
+>>> text_indentation("What? Yes!")
+What?
+
+Yes!
+>>> text_indentation("This: works.")
+This:
+
+works.
+<BLANKLINE>
+>>> text_indentation("No punctuation")
+No punctuation
+>>> text_indentation("")
+<BLANKLINE>
+>>> text_indentation(123)
+Traceback (most recent call last):
+TypeError: text must be a string
+>>> text_indentation(None)
+Traceback (most recent call last):
+TypeError: text must be a string
