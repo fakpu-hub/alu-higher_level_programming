@@ -7,13 +7,13 @@ import urllib.error
 
 def main():
     """Fetch the status and display its bytes and decoded content."""
-    url = "http://0.0.0.0:5050/status"
+    url = "https://intranet.hbtn.io/status"
 
     try:
         with urllib.request.urlopen(url) as response:
             body = response.read()
     except urllib.error.URLError:
-        url = "https://alu-intranet.hbtn.io/status"
+        url = "http://0.0.0.0:5050/status"
         with urllib.request.urlopen(url) as response:
             body = response.read()
 
