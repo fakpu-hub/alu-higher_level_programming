@@ -1,6 +1,4 @@
--- Task: Create the force_name table
-
--- Create the table if it does not already exist.
+-- Makes force_name where the name field is mandatory
 CREATE TABLE IF NOT EXISTS force_name (
     id INT,
     name VARCHAR(256) NOT NULL

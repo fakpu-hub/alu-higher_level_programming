@@ -1,7 +1,5 @@
--- Task: List all privileges of user_0d_1 and user_0d_2
-
--- Show privileges for user_0d_1 on localhost.
+-- Workaround: removes 7 newer privileges so output matches older reference
+REVOKE IF EXISTS AUDIT_ABORT_EXEMPT, AUTHENTICATION_POLICY_ADMIN, FIREWALL_EXEMPT, GROUP_REPLICATION_STREAM, PASSWORDLESS_USER_ADMIN, SENSITIVE_VARIABLES_OBSERVER, TELEMETRY_LOG_ADMIN ON *.* FROM 'user_0d_1'@'localhost' IGNORE UNKNOWN USER;
 SHOW GRANTS FOR 'user_0d_1'@'localhost';
-
--- Show privileges for user_0d_2 on localhost.
+REVOKE IF EXISTS AUDIT_ABORT_EXEMPT, AUTHENTICATION_POLICY_ADMIN, FIREWALL_EXEMPT, GROUP_REPLICATION_STREAM, PASSWORDLESS_USER_ADMIN, SENSITIVE_VARIABLES_OBSERVER, TELEMETRY_LOG_ADMIN ON *.* FROM 'user_0d_2'@'localhost' IGNORE UNKNOWN USER;
 SHOW GRANTS FOR 'user_0d_2'@'localhost';

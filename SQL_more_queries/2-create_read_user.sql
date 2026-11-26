@@ -1,11 +1,4 @@
--- Task: Create database hbtn_0d_2 and user_0d_2 with SELECT privilege
-
--- Create the database if it does not already exist.
+-- Makes hbtn_0d_2 and user_0d_2 with read-only access to it
 CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
-
--- Create the user if it does not already exist.
-CREATE USER IF NOT EXISTS 'user_0d_2'@'localhost'
-IDENTIFIED BY 'user_0d_2_pwd';
-
--- Grant SELECT privilege on hbtn_0d_2 to user_0d_2.
+CREATE USER IF NOT EXISTS 'user_0d_2'@'localhost' IDENTIFIED BY 'user_0d_2_pwd';
 GRANT SELECT ON hbtn_0d_2.* TO 'user_0d_2'@'localhost';
